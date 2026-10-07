@@ -1,8 +1,11 @@
 # Entorno virtual
 venv/
+.venv/
 
 # Variables de entorno
 .env
+.env.*
+!.env.example
 
 # Python
 __pycache__/
@@ -15,6 +18,7 @@ __pycache__/
 *.log
 db.sqlite3
 media/
+staticfiles/
 
 # IDEs
 .vscode/

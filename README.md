@@ -143,17 +143,12 @@ python manage.py runserver
 
 ### Variables de entorno
 
+Copiá `.env.example` a `.env` y completá los valores:
+
 ```env
-# Django settings
+SECRET_KEY=   # generala con: python -c "from django.core.management.utils import get_random_secret_key as g; print(g())"
 DEBUG=True
-SECRET_KEY=tu_clave_secreta_aqui
-
-# Base de datos (SQLite por defecto)
-DATABASE_URL=sqlite:///db.sqlite3
-
-# Media files
-MEDIA_URL=/media/
-MEDIA_ROOT=/ruta/completa/a/tu/proyecto/media/
+ALLOWED_HOSTS=127.0.0.1,localhost
 ```
 
 ### URLs útiles
