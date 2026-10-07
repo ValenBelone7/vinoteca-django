@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required, permission_required
 from django.shortcuts import get_object_or_404, redirect, render
 
 from .forms import BodegaForm, VinoForm
-from .models import Bodega, Vino, Compra, ItemCompra
+from .models import Bodega, Categoria, Compra, ItemCompra, Varietal, Vino
 from usuarios.models import CustomUser
 from django.contrib import messages
 
